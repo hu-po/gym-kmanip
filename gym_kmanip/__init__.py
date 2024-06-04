@@ -8,8 +8,9 @@ import numpy as np
 from numpy.typing import NDArray
 from scipy.spatial.transform import Rotation as R
 
-ASSETS_DIR: str = os.path.join(os.path.dirname(__file__), "assets")
-DATA_DIR: str = os.path.join(os.path.dirname(__file__), "data")
+KMANIP_DIR: str = os.getenv('KMANIP_DIR', os.path.dirname(__file__))
+ASSETS_DIR: str = os.path.join(KMANIP_DIR, "assets")
+DATA_DIR: str = os.path.join(KMANIP_DIR, "data")
 
 # this one is the best, fight me
 DATE_FORMAT: str = "%mm%dd%Yy_%Hh%Mm"
