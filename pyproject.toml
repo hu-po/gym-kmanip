@@ -19,6 +19,7 @@ dependencies = [
     "rerun-sdk>=0.16.0",
     "imageio[ffmpeg]>=2.34.0",
     "pytest>=8.1.0",
+    "pyzmq>=26.0.3",
 ]
 
 [project.urls]
